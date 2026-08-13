@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | PEERS-IN-TECH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="PEERS-IN-TECH logo"></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="events.html">Events</a>
+      <a href="resources.html">Resources</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="nav-login active">Login</a>
+      <a href="login.html#signup" class="nav-cta">Join Now</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="breadcrumb"><a href="index.html">Home</a> / Login</span>
+    <h1>Log in to your dashboard.</h1>
+    <p>Access your courses, track what you're enrolled in, and pick up where you left off.</p>
+  </div>
+</section>
+
+<!-- =========================================================
+     LOGIN / SIGN UP
+     ========================================================= -->
+<section id="auth-section">
+  <div class="wrap">
+    <div class="auth-shell" data-reveal>
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tab-login" type="button">Log In</button>
+        <button class="auth-tab" id="tab-signup" type="button">Sign Up</button>
+      </div>
+
+      <div class="auth-panel-inner">
+        <!-- Login panel -->
+        <div class="auth-panel active" id="panel-login">
+          <form id="login-form">
+            <div class="form-field">
+              <label for="login-email">Email address</label>
+              <input type="email" id="login-email" required>
+            </div>
+            <div class="form-field">
+              <label for="login-password">Password</label>
+              <input type="password" id="login-password" required>
+            </div>
+            <button type="submit" class="btn-dark" style="width:100%;">Log In</button>
+          </form>
+          <div class="auth-switch">New here? <button type="button" id="switch-to-signup">Create an account</button></div>
+        </div>
+
+        <!-- Sign up panel -->
+        <div class="auth-panel" id="panel-signup">
+          <form id="signup-form">
+            <div class="form-field">
+              <label for="signup-name">Full name</label>
+              <input type="text" id="signup-name" required>
+            </div>
+            <div class="form-field">
+              <label for="signup-email">Email address</label>
+              <input type="email" id="signup-email" required>
+            </div>
+            <div class="form-field">
+              <label for="signup-password">Password</label>
+              <input type="password" id="signup-password" required minlength="6">
+            </div>
+            <div class="form-field">
+              <label for="signup-role">I am joining as a</label>
+              <select id="signup-role">
+                <option value="Student">Student</option>
+                <option value="Mentor">Mentor</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-dark" style="width:100%;">Create Account</button>
+          </form>
+          <div class="auth-switch">Already have an account? <button type="button" id="switch-to-login">Log in</button></div>
+        </div>
+
+        <p id="auth-status"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     DASHBOARD (shown after login/sign up)
+     ========================================================= -->
+<section id="dashboard" class="bg-gray">
+  <div class="wrap">
+    <div class="dashboard-header">
+      <div class="dashboard-welcome">
+        <span class="eyebrow" style="color:var(--royal);margin-bottom:6px;">Your dashboard</span>
+        <h2 style="font-size:1.6rem;">Welcome, <span id="dash-name">there</span><span class="role-badge" id="dash-role">Student</span></h2>
+      </div>
+      <button class="btn-ghost on-light" id="logout-btn" type="button">Log out</button>
+    </div>
+
+    <div class="section-head" style="margin-bottom:26px;">
+      <span class="eyebrow" style="color:var(--royal)">Enroll</span>
+      <h2 style="font-size:1.4rem;">Available courses.</h2>
+    </div>
+    <div class="course-grid" id="enroll-grid"></div>
+
+    <div style="margin-top:60px;">
+      <div class="section-head" style="margin-bottom:20px;">
+        <span class="eyebrow" style="color:var(--royal)">My courses</span>
+        <h2 style="font-size:1.4rem;">What you're enrolled in.</h2>
+      </div>
+      <div class="enrolled-list" id="enrolled-list">
+        <p class="empty-state">You haven't enrolled in anything yet, pick a course above to get started.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <span class="logo-mark" style="font-size:1.2rem;">PEERS-IN-TECH</span>
+        <p style="margin-top:10px;max-width:32ch;">A nonprofit reducing digital illiteracy among African youth through free, peer-led tech workshops.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="events.html">Events</a>
+        <a href="resources.html">Resources</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>peersintech@gmail.com</p>
+        <p>Accra, Ghana</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <a href="https://www.facebook.com/share/1B9RhbeYCy/?mibextid=wwXIfr">Facebook</a>
+        <a href="https://www.linkedin.com/company/peers-in-tech/">LinkedIn</a>
+        <a href="https://x.com/peers_intech?s=11">X / Twitter</a>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      <span>© 2026 PEERS IN TECH Foundation. All rights reserved.</span>
+      <span>Built for people teaching people.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/backend.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

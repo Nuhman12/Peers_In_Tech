@@ -1,0 +1,45 @@
+/* ===========================================================
+   PEERS-IN-TECH — animations.css
+   =========================================================== */
+
+@keyframes scroll-ticker{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(-50%); }
+}
+.ticker{ animation: scroll-ticker 32s linear infinite; }
+
+@keyframes fade-up{
+  from{ opacity:0; transform:translateY(18px); }
+  to{ opacity:1; transform:translateY(0); }
+}
+.reveal{
+  opacity:0;
+  animation: fade-up 0.7s ease forwards;
+}
+.reveal.in-view{ opacity:0; } /* placeholder kept for JS toggle class parity */
+
+[data-reveal]{
+  opacity:0;
+  transform:translateY(18px);
+  transition:opacity .6s ease, transform .6s ease;
+}
+[data-reveal].is-visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.btn-primary, .btn-dark, .btn-ghost{
+  will-change:transform;
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  .ticker{ animation:none; }
+  [data-reveal]{ opacity:1; transform:none; transition:none; }
+  #network{ display:none; }
+  .hero-illustration{ animation:none; opacity:1; transform:none; }
+  .hero-photo-frame, .hero-photo-frame::before, .hero-photo{ animation:none; }
+  .photo-shine{ display:none; }
+  .frame-corner{ animation:none; opacity:1; }
+  .orbit-dot{ animation:none; opacity:1; }
+}
