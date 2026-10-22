@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1743B3">
+<link rel="icon" type="image/png" href="images/logo.png">
+<title>PEERS-IN-TECH | Peer-led tech education, Ghana</title>
+<meta name="description" content="PEERS-IN-TECH is a nonprofit reducing digital illiteracy among African youth through free, peer-led tech workshops.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- =========================================================
+     NAVBAR, transparent over hero, solid blue once scrolled
+     ========================================================= -->
+<header>
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="PEERS-IN-TECH logo">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="events.html">Events</a>
+      <a href="resources.html">Resources</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="nav-login">Login</a>
+      <a href="login.html#signup" class="nav-cta">Join Now</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <img src="images/hero-bg.jpg" alt="" class="hero-bg-img">
+  <div class="hero-blob" aria-hidden="true"></div>
+  <canvas id="network" aria-hidden="true"></canvas>
+  <div class="wrap hero-inner">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Peer-led tech education &middot; Africa</span>
+        <h1>Empowering Students Through <em>Technology</em></h1>
+        <p class="hero-sub">PEERS-IN-TECH is a nonprofit organisation working to reduce digital illiteracy among African youth through free workshops taught by peers who learned the same skills not long ago.</p>
+        <div class="cta-row">
+          <a href="contact.html#volunteer" class="btn-primary">Join Community</a>
+          <a href="courses.html" class="btn-light">Explore Courses</a>
+        </div>
+        <ul class="hero-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Free workshops</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Taught by peer mentors</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Beginner friendly</li>
+        </ul>
+      </div>
+      <div class="hero-illustration">
+        <div class="hero-photo-frame">
+          <span class="frame-corner tl" aria-hidden="true"></span>
+          <span class="frame-corner tr" aria-hidden="true"></span>
+          <span class="frame-corner bl" aria-hidden="true"></span>
+          <span class="frame-corner br" aria-hidden="true"></span>
+          <img src="images/cohort-photo.jpg" alt="A PEERS-IN-TECH team member recording a session in the studio" class="hero-photo">
+          <span class="photo-shine" aria-hidden="true"></span>
+        </div>
+        <span class="orbit-dot dot-1" aria-hidden="true"></span>
+        <span class="orbit-dot dot-2" aria-hidden="true"></span>
+        <span class="orbit-dot dot-3" aria-hidden="true"></span>
+        <p class="caption">Cohorts learning &amp; building together</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker" id="ticker"></div>
+</div>
+
+<section id="why">
+  <div class="wrap">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Why choose us</span>
+      <h2>A different way to learn tech.</h2>
+      <p>Real skills, taught by people who have just walked the same road you are about to take.</p>
+    </div>
+    <div class="why-grid" data-reveal>
+      <div class="why-card">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Peer-led teaching</h3>
+        <p>Every instructor learned the material themselves not long ago, so they know exactly where you might get stuck.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h3>Free &amp; low-cost</h3>
+        <p>Our workshops are free, funded by donors and partners so cost is never the barrier to digital literacy.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>Flexible scheduling</h3>
+        <p>Online, evening, and weekend cohorts built to fit around work, school, and family commitments.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></div>
+        <h3>A network, not a certificate</h3>
+        <p>You leave with mentors, peers, and a role in the next cohort, not just a piece of paper.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray" id="popular">
+  <div class="wrap">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Popular courses</span>
+      <h2>Start with one of our most-joined tracks.</h2>
+    </div>
+    <div class="course-grid" data-reveal>
+      <div class="course-card">
+        <span class="level">Beginner</span>
+        <h3>Digital Literacy Basics</h3>
+        <p>Computers, the internet, email, and everyday digital safety, for absolute beginners.</p>
+        <div class="course-meta"><span>6 weeks</span><span>Weekends</span></div>
+        <a href="login.html#signup" class="course-link">Enroll now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="course-card">
+        <span class="level">Beginner</span>
+        <h3>Graphic Design</h3>
+        <p>Photoshop, Canva, and core design fundamentals, the very first skill PEERS IN TECH taught online.</p>
+        <div class="course-meta"><span>6 weeks</span><span>Evenings</span></div>
+        <a href="login.html#signup" class="course-link">Enroll now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="course-card">
+        <span class="level pro">Intermediate</span>
+        <h3>Web Development</h3>
+        <p>HTML, CSS, and JavaScript fundamentals. Cohorts finish by shipping a real site for a local business.</p>
+        <div class="course-meta"><span>10 weeks</span><span>Evenings</span></div>
+        <a href="login.html#signup" class="course-link">Enroll now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+    <div style="margin-top:44px;text-align:center;">
+      <a href="courses.html" class="btn-dark">View all 7+ courses</a>
+    </div>
+  </div>
+</section>
+
+<section id="upcoming">
+  <div class="wrap">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Upcoming events</span>
+      <h2>Free workshops, open to everyone.</h2>
+    </div>
+    <div class="notice-card" data-reveal>
+      <div class="notice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+      <div class="notice-body">
+        <h3>New workshops are being scheduled</h3>
+        <p>Dates for our next free workshops and cohort kickoffs will be posted here. Subscribe below to hear first, or contact us to host a session at your school or community.</p>
+      </div>
+      <div class="cta-row">
+        <a href="events.html" class="btn-dark">See events</a>
+        <a href="contact.html" class="btn-ghost on-light">Host a workshop</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark" id="impact">
+  <div class="wrap">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Our impact</span>
+      <h2>Every graduate becomes someone else's teacher.</h2>
+    </div>
+    <div class="impact-grid" data-reveal>
+      <div class="impact-item"><div class="num" data-count="1200" data-suffix="+">1200+</div><div class="label">Students</div></div>
+      <div class="impact-item"><div class="num" data-count="7" data-suffix="+">7+</div><div class="label">Courses</div></div>
+      <div class="impact-item"><div class="num" data-count="80" data-suffix="+">80+</div><div class="label">Workshops</div></div>
+      <div class="impact-item"><div class="num" data-count="20" data-suffix="+">20+</div><div class="label">Mentors</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-section" id="stories">
+  <div class="wrap">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Testimonials</span>
+      <h2>What our community says.</h2>
+    </div>
+    <div class="testimonial-grid" data-reveal>
+      <div class="testimonial-card">
+        <svg class="qmark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 6C6.5 7 4 9.9 4 14v4h6v-6H7c0-2 1-3.3 3-4zm9 0c-3 1-5.5 3.9-5.5 8v4h6v-6h-3c0-2 1-3.3 3-4z"/></svg>
+        <p>I came in knowing nothing about computers. Six months later I was teaching the digital literacy track myself.</p>
+        <div class="attr"><span class="mini-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><div>A PEERS-IN-TECH graduate<span class="role">Student</span></div></div>
+      </div>
+      <div class="testimonial-card">
+        <svg class="qmark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 6C6.5 7 4 9.9 4 14v4h6v-6H7c0-2 1-3.3 3-4zm9 0c-3 1-5.5 3.9-5.5 8v4h6v-6h-3c0-2 1-3.3 3-4z"/></svg>
+        <p>The mentor who taught me web development learned it here too, a year earlier. That changed how seriously I took my own turn to teach.</p>
+        <div class="attr"><span class="mini-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><div>A PEERS-IN-TECH mentor<span class="role">Mentor</span></div></div>
+      </div>
+      <div class="testimonial-card">
+        <svg class="qmark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 6C6.5 7 4 9.9 4 14v4h6v-6H7c0-2 1-3.3 3-4zm9 0c-3 1-5.5 3.9-5.5 8v4h6v-6h-3c0-2 1-3.3 3-4z"/></svg>
+        <p>We hosted a workshop for our staff and three of them ended up joining the Microsoft Office track. Small investment, real return.</p>
+        <div class="attr"><span class="mini-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><div>A partner organisation<span class="role">Partner</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="partners">
+  <div class="wrap">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Partners</span>
+      <h2>Build the network with us.</h2>
+    </div>
+    <div class="partner-card" data-reveal>
+      <div>
+        <h3>We are looking for our first partners</h3>
+        <p>Schools, businesses, and organisations can host workshops, sponsor cohorts, or support our mentors. Join us in bringing digital skills to more young people.</p>
+      </div>
+      <a href="contact.html#volunteer" class="btn-dark">Become a partner</a>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter-section" id="newsletter">
+  <div class="wrap newsletter-inner" data-reveal>
+    <span class="eyebrow">Stay in the loop</span>
+    <h2 class="serif" style="font-size:clamp(1.9rem,3.8vw,2.7rem);color:var(--white);">Get new courses and events in your inbox.</h2>
+    <p class="sub">No spam, just news about upcoming workshops and new tracks.</p>
+    <form id="newsletter-form" class="newsletter-form">
+      <input type="email" placeholder="you@example.com" required aria-label="Email address">
+      <button type="submit" class="btn-primary">Subscribe</button>
+    </form>
+    <p id="newsletter-status" role="status"></p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html"><img src="images/logo.png" alt="PEERS-IN-TECH Foundation logo"></a>
+        <p>A nonprofit reducing digital illiteracy among African youth through free, peer-led tech workshops.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/share/1B9RhbeYCy/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+          <a href="https://www.linkedin.com/company/peers-in-tech/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+          <a href="https://x.com/peers_intech?s=11" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="events.html">Events</a>
+        <a href="resources.html">Resources</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get involved</h4>
+        <a href="login.html#signup">Join now</a>
+        <a href="login.html">Student login</a>
+        <a href="contact.html#volunteer">Volunteer or partner</a>
+        <a href="contact.html">Contact us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:peersintech@gmail.com">peersintech@gmail.com</a>
+        <p>Accra, Ghana</p>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      <span>&copy; 2026 PEERS IN TECH Foundation. All rights reserved.</span>
+      <span>Built for people teaching people.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/backend.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

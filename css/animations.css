@@ -1,0 +1,33 @@
+/* ===========================================================
+   PEERS-IN-TECH | animations.css
+   Ticker, scroll reveal, and reduced motion handling
+   =========================================================== */
+
+@keyframes scroll-ticker{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(-50%); }
+}
+.ticker{ animation: scroll-ticker 36s linear infinite; }
+.ticker-wrap:hover .ticker{ animation-play-state:paused; }
+
+[data-reveal]{
+  opacity:0;
+  transform:translateY(22px);
+  transition:opacity .7s ease, transform .7s ease;
+}
+[data-reveal].is-visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  .ticker{ animation:none; }
+  [data-reveal]{ opacity:1; transform:none; transition:none; }
+  #network{ display:none; }
+  .hero-illustration{ animation:none; opacity:1; transform:none; }
+  .hero-photo-frame, .hero-photo-frame::before, .hero-illustration img.hero-photo{ animation:none; }
+  .photo-shine{ display:none; }
+  .frame-corner{ animation:none; opacity:1; }
+  .orbit-dot{ animation:none; opacity:1; }
+}
